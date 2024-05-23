@@ -93,7 +93,6 @@ luasForm.addEventListener("submit", function (event) {
   resultDisplay.textContent = "Luas = 0" + luas.toFixed(2);
 });
 
-// fungsi about
 
 
 //fungsi untuk menggambar segitiga
