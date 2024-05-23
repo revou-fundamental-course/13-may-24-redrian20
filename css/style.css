@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar start*/
+nav {
+    background-color: #36a3ec;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+}
+
+nav ul li a:hover {
+    color: #f01111;
+}
+
+.text-white {
+    color: rgb(255, 255, 255) !important;
+    border: 5px solid #ffffff;
+    border-radius: 25%;
+}
+
+/* navbar end */
+
+
+.container {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+}
+
+.header {
+    text-align: center;
+}
+
+/* main-section start */
+#main-section {
+    border: 2px dashed #02333a;
+}
+
+.category {
+    background-color: #36a3ec;
+    padding: 1px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+}
+
+.formula-container {
+    margin: 10px;
+    font-size: large;
+}
+
+
+#formula {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.keterangan {
+    margin: 10px;
+    font-size: large;
+
+}
+
+.keterangan ul {
+    list-style-type: none;
+}
+
+/* calculator start*/
+.calculator {
+    margin: 10px;
+
+}
+
+.calculator h2 {
+    padding: 1px;
+    margin: 0;
+    text-align: center;
+    color: #e60000;
+}
+
+.calculator div form {
+    display: flex;
+}
+
+
+#calculator {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 300px;
+}
+
+
+.input-group {
+    display: flex;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.input-group label {
+    width: 20px;
+    margin-right: 10px;
+}
+
+#result {
+    font-size: x-large;
+}
+
+/* calculator end */
+/* main section end */
+
+@media screen and (max-width: 992px) {
+
+    #calculator {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .input-group {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin: 10px;
+    }
+
+    #result {
+        text-align: center;
+    }
+
+}
