@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <ul>
+            <div>
+                <li><a href="" class="text-white">Kalkulator Matematika Segitiga</a></li>
+            </div>
+            <div>
+                <li class="text-right"><a href="">Hitung Luas Segitiga</a></li>
+                <li class="text-right"><a href="" id="hitungKeliling">Hitung keliling Segitiga</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- container -->
+    <div class="container" id="main-container">
+        <!-- header -->
+        <section class="header" id="header">
+            <h1>Kalkulator Matematika Segitiga</h1>
+        </section>
+        <!-- main section -->
+        <section id="main-section">
+            <!-- title -->
+            <div class="category">
+                <h1>Luas Segitiga</h1>
+            </div>
+
+            <!-- triangle canvas -->
+            <div class="canvas-container">
+                <canvas id="triangle" height="200"></canvas>
+            </div>
+
+            <!-- formula -->
+            <div class="formula-container">
+                <p>Rumus Luas Segitiga :</p>
+                <p id="formula">L = 1/2 x a x t</p>
+            </div>
+
+            <!-- formula description -->
+            <div class="keterangan">
+                <p>Keterangan :</p>
+                <ul>
+                    <li>L = luas</li>
+                    <li>a = panjang alas</li>
+                    <li>t = tinggi</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <!-- calculator -->
+            <section class="calculator">
+                <h2>Hitung Luas Segitiga</h2>
+                <div id="calculator">
+                    <div>
+                        <form id="luasForm">
+                            <div>
+                                <div class="input-group">
+                                    <label for="alas">a :</label>
+                                    <input id="alas" type="number" name="alas" step="0.01">
+                                </div>
+                                <div class="input-group">
+                                    <label for="tinggi">t :</label>
+                                    <input id="tinggi" type="number" name="tinggi" step="0.01">
+                                </div>
+                            </div>
+                            <button type="submit">Hitung</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h1 id="result">Luas = 0</h1>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
