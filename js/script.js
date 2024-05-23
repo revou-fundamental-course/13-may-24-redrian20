@@ -1,4 +1,3 @@
-//fungsi keliling
 var hitungKelilingLink = document.getElementById("hitungKeliling");
 var contentDiv = document.getElementById("main-section");
 
@@ -79,7 +78,6 @@ hitungKelilingLink.addEventListener("click", function (event) {
   });
 });
 
-// fungsi luas
 var luasForm = document.getElementById("luasForm");
 luasForm.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -90,12 +88,9 @@ luasForm.addEventListener("submit", function (event) {
   var luas = 0.5 * alas * tinggi;
 
   var resultDisplay = document.getElementById("result");
-  resultDisplay.textContent = "Luas = 0" + luas.toFixed(2);
+  resultDisplay.textContent = "Luas = " + luas.toFixed(2); // Corrected line
 });
 
-
-
-//fungsi untuk menggambar segitiga
 function gambarSegitiga() {
   var canvas = document.getElementById("triangle");
   var ctx = canvas.getContext("2d");
@@ -126,4 +121,6 @@ function gambarSegitiga() {
   ctx.fillText("t ", canvasWidth / 2.2, centerY + 30); // Label tinggi
 }
 
-window.onload = gambarSegitiga();
+window.onload = function() {
+  gambarSegitiga();
+};
